@@ -1,0 +1,385 @@
+body{
+    font-family:sans-serif;
+}
+
+.label-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    width: 70%;
+    border: solid 3px  #3367d6;
+     border-radius: 6px;
+     background: #3367d6;
+     color: #fff;
+     text-align: center;
+   }
+
+   table {
+    width: 70%;
+   }
+
+   form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    }
+    
+   .label {
+    width: 108px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    background: #3367d6;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+   }
+    
+   .form-input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-right: 1px;
+    height: 40px;
+    width: 90%;
+    max-width: 400px;
+    font-size: 16px;
+   }
+
+   .form-input-time {
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-left: 40px;
+    padding-left: 10px;
+    height: 40px;
+    width: 90%;
+    max-width: 200px;
+    font-size: 16px;
+   }
+
+   .radio-label{
+    width: 140%;
+   }
+    
+   .form-textarea {
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 140px;
+    max-height: 200PX;
+    flex: 1;
+    width: 85%;
+    font-size: 16px;
+    font-family:"Yu Gothic";
+   }
+    
+   .send {
+    display: flex;
+   }
+
+   .form-Btn {
+    border-radius: 6px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    width: 120px;
+    letter-spacing: 0.05em;
+    background: #340beb;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    height: 50px;
+   }
+
+   .form-reset {
+    border-radius: 6px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    width: 120px;
+    letter-spacing: 0.05em;
+    background: #878787;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    height: 50px;
+   }
+
+   .check{
+    font-size: 18px;
+    width: 80%;
+    text-align: left;
+    margin-left: 30px;
+    height: 40px;
+    white-space: nowrap;
+   }
+
+   th{
+    text-align: left;
+    vertical-align: top;
+    max-width: 150px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 20px;
+    background-color: #9dabf0;
+    padding-bottom: 30px;
+   }
+
+   td{
+    text-align: left;
+    vertical-align: top;
+    max-width: 142px;
+    height: 45px;
+   }
+
+   td.explain{
+    font-size: 12.5px;
+    color: gray;
+    height: 8px;
+    padding-bottom: 13px;
+   }
+
+   .sent{
+    margin-top: 40px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    width: 60%;
+    border: solid 3px  #340beb;
+     border-radius: 6px;
+     background:  #340beb;
+     color: #fff;
+     text-align: center;
+   }
+
+   .top-explain{
+    font-size: 16px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+   }
+
+   .thanks{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 35px;
+    width: 87%;
+   }
+
+
+   .tohome {
+    margin: 30px;
+   }
+
+
+   @media (max-width:470px) {
+    body{
+      font-family:sans-serif;
+  }
+  
+  .label-title {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 25px;
+      font-size: 24px;
+      width: 70%;
+      border: solid 3px  #3367d6;
+       border-radius: 6px;
+       background: #3367d6;
+       color: #fff;
+       text-align: center;
+     }
+  
+     table{
+      width: 90%;
+     }
+  
+     form {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 450px;
+      width: 95%;
+      }
+      
+     .label {
+      width: 108px;
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 5px;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: inline-block;
+      text-align: center;
+      background: #3367d6;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+     }
+      
+     .form-input {
+      border: 1px solid gray;
+      border-radius: 5px;
+      margin-left: 40px;
+      padding-left: 10px;
+      padding-right: 1px;
+      height: 40px;
+      width: 90%;
+      max-width: 400px;
+      font-size: 16px;
+     }
+  
+     .form-input-time {
+      border: 1px solid gray;
+      border-radius: 5px;
+      margin-left: 40px;
+      padding-left: 10px;
+      height: 40px;
+      width: 90%;
+      max-width: 200px;
+      font-size: 16px;
+     }
+  
+     .radio-label{
+      width: 140%;
+     }
+      
+     .form-textarea {
+      border: 1px solid gray;
+      border-radius: 6px;
+      margin-left: 40px;
+      padding-left: 1em;
+      padding-right: 1em;
+      height: 140px;
+      max-height: 200PX;
+      flex: 1;
+      width: 82%;
+      max-width: 220px;
+      font-size: 16px;
+      font-family:"Yu Gothic";
+     }
+      
+     .send {
+      display: flex;
+     }
+  
+     .form-Btn {
+      border-radius: 6px;
+      margin: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 12px;
+      padding-bottom: 20px;
+      width: 120px;
+      letter-spacing: 0.05em;
+      background: #340beb;
+      color: #fff;
+      font-weight: bold;
+      font-size: 17px;
+      height: 50px;
+     }
+  
+     .form-reset {
+      border-radius: 6px;
+      margin: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 12px;
+      padding-bottom: 20px;
+      width: 120px;
+      letter-spacing: 0.05em;
+      background: #878787;
+      color: #fff;
+      font-weight: bold;
+      font-size: 17px;
+      height: 50px;
+     }
+  
+     .check{
+      font-size: 18px;
+      width: 80%;
+      text-align: left;
+      margin-left: 30px;
+      height: 40px;
+     }
+  
+     th{
+      text-align: left;
+      vertical-align: top;
+      max-width: 150px;
+      font-weight: bold;
+      font-size: 15px;
+      height: 20px;
+      background-color: #9dabf0;
+      padding-bottom: 30px;
+     }
+  
+     td{
+      text-align: left;
+      vertical-align: top;
+      width: 60%;
+      height: 45px;
+     }
+  
+     td.explain{
+      font-size: 12.5px;
+      color: gray;
+      height: 8px;
+      padding-bottom: 13px;
+     }
+  
+     .sent{
+      margin-top: 40px;
+      margin-bottom: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 40px;
+      width: 60%;
+      border: solid 3px  #340beb;
+       border-radius: 6px;
+       background:  #340beb;
+       color: #fff;
+       text-align: center;
+     }
+  
+     .top-explain{
+      font-size: 16px;
+      margin: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+  
+     }
+  
+     .thanks{
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 18px;
+      line-height: 35px;
+      width: 87%;
+     }
+  
+  
+     .tohome {
+      margin: 30px;
+     }
+  }
