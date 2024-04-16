@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>会計入力フォーム</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hum.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-area">
+      <p>
+        <a href="familiogroup.html"  class="logo">
+          <img src="Familio-icon.jpg" alt="Familiio">ボランティア専用
+        </a>
+      </p>
+      <div class="hamburger">
+        <!-- ハンバーガーメニューの線 -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- /ハンバーガーメニューの線 -->
+      </div>
+    </div>
+    <ul class="slide-menu">
+      <li class="menu-title">メニュー</li>
+      <li><a href="familiogroup.html"><img class="icon" src="icon/home.jpg" alt="">トップページ</a></li>
+      <li><a href="form.html"><img class="icon" src="icon/calcurater.jpg" alt="">会計入力</a></li>
+      <li><a href="receipt.html"><img class="icon" src="icon/receipt.jpg" alt="">領収書作成</a></li>
+      <li><a href="news.html"><img class="icon" src="icon/voice.jpg" alt="">お知らせ</a></li>
+      <li class="link"><a href="https://drive.google.com/drive/u/0/folders/1VZSixxhPg7HKHurSr3JLgUGy-TtUz-sN"><img class="icon" src="icon/graph.jpg" alt="">会計レポートを見る</a></li>
+      <li><a href="https://sites.google.com/view/familio-group"><img class="icon" src="icon/u-turn.jpg" alt="">Familioのサイトへ</a></li>
+    </ul>
+  </header>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+  <p class="label-title">会計入力フォーム</p>
+  <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScoHGE5z7q74wzSezCpjdq2BBVLnCkAXE2kVs1_D_xsXdSP8w/formResponse" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
+    <table class="form-table">
+      <tbody>
+          <tr>
+            <th class="label">収入・支出</th>
+            <td>
+              <div class="radio-label">
+                <label class="check">
+                  <input type="radio" required="required" name="entry.656278035" id="income" value="収入">
+                  収入
+                </label>
+              </div>
+            </td>
+            <td>
+              <div>
+                <label class="check">
+                  <input type="radio" required="required" name="entry.656278035" id="expense" value="支出">
+                  支出
+                </label>
+              </div>
+            </td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th class="label">日時</th>
+            <td>
+              <input type="date" required="required" class="form-input-time" name="entry.1402847010" id="datetime">
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="4" class="explain">レシート・領収書に記載されている日時を入力してください。↑</td>
+          </tr>
+
+          <tr>
+            <th class="label">費目</th>
+            <td colspan="2">
+              <select name="entry.658499639" required="required" id="category" class="form-input">
+                <option value="">選択してください</option>
+                <option value="参加費">参加費</option>
+                <option value="基金">基金</option>
+                <option value="募金">募金</option>
+                <option value="売上">売上</option>
+                <option value="飲食費">飲食費</option>
+                <option value="印刷代">印刷代</option>
+                <option value="広告宣伝費">広告宣伝費</option>
+                <option value="リース料">リース料</option>
+                <option value="備品費">備品費</option>
+                <option value="通信費">通信費</option>
+                <option value="保険料">保険料</option>
+                <option value="各種手数料">各種手数料</option>
+                <option value="その他">その他</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <th class="label">内容</th>
+            <td colspan="2">
+              <input type="text" required="required" name="entry.605509810" id="type" class="form-input" size="30"   placeholder="例）支援金、印刷代  など">
+            </td>
+          </tr>
+
+          <tr>
+            <th class="label">金額</th>
+            <td colspan="2">
+              <input type="number" required="required" class="form-input" name="entry.2007331470" id="amount" placeholder="例）1100(,なしの数字のみ)">
+            </td>
+          </tr>
+
+          <tr>
+            <th class="label">担当者名</th>
+            <td colspan="2">
+              <input type="text" required="required" name="entry.186625345" id="name" class="form-input" placeholder="例）Familio太郎">
+            </td>
+          </tr>
+
+          <tr>
+            <th class="label">備考(メモ)</th>
+            <td colspan="2">
+              <textarea class="form-textarea" name="entry.1055026064" id="text" placeholder="任意"></textarea>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+    
+    <div class="send">
+      <input type="submit" class="form-Btn" value="送信する">
+      <input type="reset"  class="form-reset" value="リセット">
+    </div>
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="if(submitted)  {window.location='thanks.html';}"
+    ></iframe>
+  </form>
+
+  <a href="familiogroup.html" class="tohome">ホームに戻る</a>
+</body>
+
+</html>
