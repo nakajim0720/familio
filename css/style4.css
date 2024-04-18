@@ -73,3 +73,11 @@ body{
    a.tohome {
     margin: 30px;
    }
+
+   .transfer {
+    margin: auto;
+    width: 80%;
+    line-height: 30px;
+    word-break:break-all;
+    letter-spacing: 2.5px;
+   }
