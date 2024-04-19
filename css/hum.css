@@ -18,6 +18,16 @@
     font-family: 'Yu Gothic UI', 'Hiragino Maru Gothic ProN W4';
   }
 
+  .header-area {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 30px;
+    align-items: center;
+    background-color: rgb(255, 252, 252);
+    box-shadow: 0 0.4px 10px rgba(0, 0, 0, 0.35);
+  }
+
   .logo{
     text-decoration: none; /* リンクの下線を消す */
     color: #0f0f0f;
