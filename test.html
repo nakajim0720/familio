@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>領収書作成フォーム</title>
+  <link rel="stylesheet" href="../css/style2.css">
+  <link rel="stylesheet" href="../css/hum.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-area">
+      <p>
+        <a href="../familiogroup.html"  class="logo">
+          <img src="../Familio-icon.png" alt="Familiio">ボランティア専用
+        </a>
+      </p>
+      <div class="hamburger">
+        <!-- ハンバーガーメニューの線 -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- /ハンバーガーメニューの線 -->
+      </div>
+    </div>
+    <ul class="slide-menu">
+      <li class="menu-title">メニュー</li>
+      <li><a href="../familiogroup.html"><img class="icon" src="../icon/home.svg" alt="">トップページ</a></li>
+      <li><a href="form.html"><img class="icon" src="../icon/calculator.svg" alt="">会計入力</a></li>
+      <li><a href="receipt.html"><img class="icon" src="../icon/receipt.svg" alt="">領収書作成</a></li>
+      <li><a href="news.html"><img class="icon" src="../icon/voice.svg" alt="">お知らせ</a></li>
+      <li class="link"><a href="https://drive.google.com/drive/u/0/folders/1VZSixxhPg7HKHurSr3JLgUGy-TtUz-sN"><img class="icon" src="../icon/graph.svg" alt="">会計レポートを見る</a></li>
+      <li><a href="https://sites.google.com/view/familio-group"><img class="icon" src="../icon/u-turn.svg" alt="">Familioのサイトへ</a></li>
+    </ul>
+  </header>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../script.js"></script>
+
+  <p class="label-title">領収書作成フォーム</p>
+  <p class="top-explain">これは領収書作成フォームです。<br>このフォームに入力された情報を元に領収書を作成します。作成した領収書はのちに入力していただくメールアドレス宛てにメールで送信いたします。<br>作成される領収書のサンプルは<a href="https://drive.google.com/file/d/1QsRZhzqvwOwVs7FJNwShH9hrb4SBdg24/view?usp=drive_link">こちら</a><a href="receipt-sample.pdf"></a></p>
+  <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSekAK3NxPYBTRqQOx1irJQWAdHGKeb1KwzyyH7rI6nY62vkow/formResponse" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
+    <table class="form-table">
+      <tbody>
+          <tr>
+            <th class="label">担当者名</th>
+            <td colspan="2">
+              <input type="text" required="required" name="entry.763040299" id="name" class="form-input" placeholder="例）Familio太郎">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="explain">担当者名を入力してください。↑</td>
+          </tr>
+
+          <tr>
+            <th class="label">メールアドレス</th>
+            <td colspan="2" class="input">
+                <input type="email" required="required" name="entry.805661993"
+                id="email"
+                class="form-input"
+                placeholder="sample@mail.com">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="explain">作成された領収書を受け取るメールアドレスを入力してください。<br>
+            <b>※先方(領収書を渡す相手)のメールアドレスは入力しないでください。</b></td>
+          </tr>
+
+          <tr>
+            <th class="label">発行日</th>
+            <td colspan="2">
+              <input type="date" required="required" class="form-input-time" name="entry.1256422110" id="datetime">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="explain">領収書を発行する日付を入力してください。<br>※原則として当日の日付</td>
+          </tr>
+
+          <tr>
+            <th class="label">宛先</th>
+            <td colspan="2">
+                <input type="text" required="required" name="entry.2075153163" id="name" class="form-input" placeholder="例）株式会社〇〇">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="explain">敬称を省略して入力してください。<br>敬称については次の質問に回答してください。<br>敬称をつけると領収書が作成されないことがあります。</td>
+          </tr>
+
+
+          <tr>
+            <th class="label">敬称</th>
+            <td>
+              <div class="radio-label">
+                <label class="check">
+                  <input type="radio" required="required" name="entry.1783285248" id="sama" value="様">
+                  様
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="radio-label">
+                <label class="check">
+                  <input type="radio" required="required" name="entry.1783285248" id="wantyou" value="御中">
+                  御中
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="explain">宛先に対して適した敬称を選択してください。<br><br>
+            個人に対しては<b>様</b>、企業や部署に対しては<b>御中</b>を選択してください。</td>
+          </tr>
+
+          <tr>
+            <th class="label">金額</th>
+            <td colspan="2">
+              <input type="number" required="required" class="form-input" name="entry.760375611" id="amount" placeholder="例）1100">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="explain">
+                ,（カンマ）を含まない数字のみを入力してください。
+            </td>
+          </tr>
+
+          <tr>
+            <th class="label">但し書き</th>
+            <td colspan="2">
+              <input type="text" required="required" name="entry.1795903315" id="type" class="form-input" size="30"   placeholder="例）活動費  など">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="explain">
+                領収書が何の対価として発行されたのか、代金の内容を記入してください。
+                代金の内容の末尾に「<b>代</b>」や、「<b>費</b>」をつけてください。<br>
+                ※「として」は、領収書を作成する際に自動的に付け加えられるため、記入しないでください。記入すると領収書が作成されない場合があります。
+            </td>
+          </tr>
+
+          <tr>
+            <th class="label">受け渡し方法</th>
+            <td>
+              <div class="radio-label">
+                <label class="check">
+                  <input type="radio" required="required" name="entry.1230592765" id="paper" value="紙">
+                  紙
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="radio-label">
+                <label class="check">
+                  <input type="radio" required="required" name="entry.1230592765" id="data" value="データ">
+                  データ
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="explain">
+              領収書を印刷して直接渡す場合は「<b>紙</b>」、メールなどで送付する場合は「<b>データ</b>」を選択してください。<br>
+              ※金額が5万円以上の場合、印紙税法の観点から、「紙」を選択しても、「<b>データ</b>」で作成されます。この場合は、紙には印刷せず、PDFファイルをメールなどで相手に送付してください。
+          </td>
+          </tr>
+
+          <tr>
+            <th class="label">備考(メモ)</th>
+            <td colspan="2">
+              <textarea class="form-textarea" name="entry.2067921331" id="text" placeholder="任意"></textarea>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+    
+    <div class="send">
+      <input type="submit" class="form-Btn" value="送信する">
+      <input type="reset"  class="form-reset" value="リセット">
+    </div>
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="if(submitted)  {window.location='receipt-thanks.html';}"
+    ></iframe>
+  </form>
+
+  <a href="../familiogroup.html" class="tohome">ホームに戻る</a>
+  <footer>
+    <p>&copy 2024 Nakajim</p>
+  </footer>
+</body>
+
+</html>
