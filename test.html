@@ -41,6 +41,28 @@
  <p><br>作成される領収書のサンプルは<a href="https://drive.google.com/file/d/1QsRZhzqvwOwVs7FJNwShH9hrb4SBdg24/view?usp=drive_link">こちら</a>
  <a href="領収書のサンプル.pdf" download>PDFファイルをダウンロード</a>
  </p>
+
+  <canvas id="pdf-viewer"></canvas>
+
+<script>
+  // PDF.jsでPDFを読み込む
+  PDFJS.getDocument('領収書のサンプル.pdf').promise.then(function(pdf) {
+    // 1ページ目を表示
+    pdf.getPage(1).then(function(page) {
+      var canvas = document.getElementById('pdf-viewer');
+      var context = canvas.getContext('2d');
+
+      var viewport = page.getViewport({ scale: 1.0 });
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      // ページをキャンバスに描画
+      page.render({ canvasContext: context, viewport: viewport }).promise.then(function() {
+        console.log('Page rendered');
+      });
+    });
+  });
+</script>
  
   <a href="../familiogroup.html" class="tohome">ホームに戻る</a>
   <footer>
